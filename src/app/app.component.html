@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a href="#" class="navbar-brand">logo</a>
+  <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+         <div id="menu" class="collapse navbar-collapse">
+     <ul class="navbar-nav mx-auto">
+         <li class="nav-item">
+             <a routerLink="home" class="nav-link" routerLinkActive="active">home</a>
+         </li>
+         <li class="nav-item">
+             <a routerLink="login" class="nav-link"routerLinkActive="active">login</a>
+         </li>
+         <li class="nav-item">
+             <a routerLink="register" class="nav-link"routerLinkActive="active">register</a>
+         </li>
+         <li class="nav-item">
+             <a routerLink="contactus" class="nav-link"routerLinkActive="active">contactus</a>
+         </li>
+        
+         
+     </ul>
+ </div>
+     </nav>
+     <router-outlet></router-outlet>
+ 
+ 
+     <div class="container">
+         <router-outlet></router-outlet>
+     </div>

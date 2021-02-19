@@ -1,0 +1,25 @@
+<p>userdashboard works!</p>
+
+<div class="card" style="width: 20rem;margin-left: 800px;"> 
+    
+    <div class="card-body"> 
+        <h3 class="text-end text-primary">welcome,{{userObj.username}}</h3>
+        <div style="width: 200px;"><img [src]=userObj.userImgLink class="card-img-top" alt="..." height="100px" style="border-radius: 50%;"></div>
+        <button class="btn btn-secondary float-end" (click)="userLogout()">logout</button>
+       </div> 
+</div>
+
+
+<div class="row">
+    <div class="col-sm-3">
+        <nav class="nav">
+            <li class="nav-item">
+                <a routerLink="userprofile" class="nav-link">userprofile</a>
+            </li>
+        </nav>
+
+    </div>
+    <div class="col-sm-3">
+     <router-outlet></router-outlet>
+    </div>
+</div>
